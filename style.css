@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', monospace;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 960px;
+    height: 540px;
+}
+
+#gameCanvas {
+    display: block;
+    background: #000000;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff33;
+}
+
+#ui-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.screen.active {
+    display: flex;
+}
+
+#hud {
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#hud.active {
+    display: flex;
+}
+
+#score {
+    font-size: 24px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 900;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 30px #00ffff, 0 0 60px #00ffff;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.title.death {
+    color: #ff0066;
+    text-shadow: 0 0 10px #ff0066, 0 0 30px #ff0066, 0 0 60px #ff0066;
+}
+
+.title.win {
+    color: #00ff66;
+    text-shadow: 0 0 10px #00ff66, 0 0 30px #00ff66, 0 0 60px #00ff66;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}

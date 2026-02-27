@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgmetry Dash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="960" height="540"></canvas>
+        <div id="ui-overlay">
+            <div id="menu-screen" class="screen active">
+                <h1 class="title">GEORGMETRY DASH</h1>
+                <p class="subtitle">Click or Press Space to Start</p>
+            </div>
+            <div id="death-screen" class="screen">
+                <h1 class="title death">CRASHED!</h1>
+                <p class="subtitle">Click or Press Space to Retry</p>
+            </div>
+            <div id="win-screen" class="screen">
+                <h1 class="title win">LEVEL COMPLETE!</h1>
+                <p class="subtitle">Click or Press Space to Continue</p>
+            </div>
+            <div id="hud" class="screen">
+                <span id="score">0%</span>
+            </div>
+        </div>
+    </div>
+    <script src="levels.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
