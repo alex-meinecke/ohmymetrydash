@@ -1,4 +1,4 @@
-# Georgmetry Dash
+# Oh.My.Metry -
 
 A Geometry Dash clone built with vanilla JavaScript and HTML5 Canvas. Features a spacy neon visual theme with glowing effects.
 
